@@ -1,0 +1,38 @@
+*
+{
+  margin: 0px;
+  background-color: rgb(30, 160, 160);
+}
+
+.container
+{
+  margin-top: 32px;
+  max-width:fit-content;
+}
+
+.table
+{
+  margin: 0px;
+}
+
+.table__header
+{
+  display: flex;
+  justify-content: space-between;
+  margin-left:20%;
+  margin-right:20%;
+  padding-bottom: 12px;
+  text-align: center;
+}
+/*
+.card__button
+{
+  background-color: rgb(183, 50, 50);
+  font-weight: bold;
+  position: absolute;
+  top: 135px;
+  font-size: larger;
+  margin-left: 24px;
+  border-radius: 10px;
+  border: 2px solid white;
+}*/
