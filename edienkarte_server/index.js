@@ -25,6 +25,7 @@ database.serialize(() =>
       id INTEGER PRIMARY KEY,
       name VARCHAR(255) NOT NULL,
       price VARCHAR(255) NOT NULL,
+      desc VARCHAR(255) NOT NULL,
       imgSrc VARCHAR(255) NOT NULL
       );`
   )
@@ -35,11 +36,12 @@ database.serialize(() =>
     if(!foodList)
     {
       database.run(
-        `INSERT INTO foodList (name, price, imgSrc)
+        `INSERT INTO foodList (name, price, desc, imgSrc)
         VALUES(
           "Kartupelis",
           "3",
-          "kartupelisAttels");
+          "Apraksts",
+          "https://cdn.santa.lv/media/2020/03/4/large/2530503a0cb7.jpg");
         )`
       )
     }
@@ -65,10 +67,11 @@ app.get("/foodList", (req, res) =>
 
 app.post('/foodList', (req, res) => {
   database.run(`
-    INSERT INTO foodList (name, price, imgSrc)
+    INSERT INTO foodList (name, price, desc, imgSrc)
     VALUES(
       "${req.body.name}", 
-      "${req.body.price}", 
+      "${req.body.price}",
+      "${req.body.desc}",  
       "${req.body.imgSrc}");
   `)
     res.json('New item added')

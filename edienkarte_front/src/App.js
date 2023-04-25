@@ -1,4 +1,4 @@
-import Table from "react-bootstrap/Table";
+
 //import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
@@ -13,6 +13,7 @@ const newCardDefaultValue =
 {
   name: "",
   price: "",
+  desc: "",
   imgSrc: ""
 }
 
@@ -121,6 +122,30 @@ function App() {
                 </Form.Group>
 
                 <Form.Group className="card__group">
+                  <Form.Label>Apraksts</Form.Label>
+                  <Form.Control
+                  type="text"
+                  placeholder="Apraksts"
+                  value={newCardValue.desc}
+                  onChange=
+                  {
+                    (event) =>
+                    {
+                      const updatedNewCardValue = 
+                      {
+                        ...newCardValue,
+                        desc: event.target.value
+                      }
+
+                      setNewCardValue(updatedNewCardValue)
+                    }
+                  }
+                  required="required"
+                  ></Form.Control>
+                </Form.Group>
+
+
+                <Form.Group className="card__group">
                   <Form.Label>Attēla hipersaite</Form.Label>
                   <Form.Control
                   type="text"
@@ -151,9 +176,10 @@ function App() {
         {
             return(
                 <Col key={Math.random()} className="mt-4">
-                <p>{card.name}</p>
-                <p>{card.price}</p>
-                <p><img src={card.imgSrc} alt="" width="224px"></img></p>
+                <div>{card.name}</div>
+                <div>{card.price}</div>
+                <div>{card.desc}</div>
+                <div><img src={card.imgSrc} alt="" width="224px"></img></div>
             </Col>
           )
         })}
