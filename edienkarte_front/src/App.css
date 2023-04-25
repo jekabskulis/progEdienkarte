@@ -15,15 +15,6 @@
   margin: 0px;
 }
 
-.table__header
-{
-  display: flex;
-  justify-content: space-between;
-  margin-left:20%;
-  margin-right:20%;
-  padding-bottom: 12px;
-  text-align: center;
-}
 .form-label{
   margin-top: 10px;
   color: #2B4570;
@@ -32,11 +23,40 @@
 }
 .card__button
 {
+  margin-top: 10px;
   background-color: #2B4570;
-  position: absolute;
   color: white;
-  top: 380px;
   font-size: larger;
   border-radius: 8px;
   border: 2px solid black;
+}
+
+.foodList
+{
+  border: 5px solid whitesmoke;
+  border-radius: 10px;
+  width: 336px;
+  margin-left: 20px;
+}
+
+.foodList__header
+{
+  font-weight: bold;
+  text-align: center;
+}
+
+.foodList__image
+{
+  text-align: center;
+}
+
+.foodList__price
+{
+  font-weight: bold;
+  margin-left: 24px;
+}
+
+.foodList__desc
+{
+  margin-left: 24px;
 }

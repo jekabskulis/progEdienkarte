@@ -36,13 +36,13 @@ function App() {
 
   useEffect(() =>
   {
-    /*
+    
     const runInterval = setInterval(() =>
     {
       getValueList()
     }, 500)
-    return () => clearInterval(runInterval)*/
-    getValueList();
+    return () => clearInterval(runInterval)
+    //getValueList();
   }, [])
 
   return (
@@ -175,11 +175,11 @@ function App() {
         {Array.from(cards).map((card, index) =>
         {
             return(
-                <Col key={Math.random()} className="mt-4">
-                <div>{card.name}</div>
-                <div>{card.price}</div>
-                <div>{card.desc}</div>
-                <div><img src={card.imgSrc} alt="" width="224px"></img></div>
+                <Col key={Math.random()} className="mt-4 foodList">
+                <div className="foodList__header">{card.name}</div>
+                <div className="foodList__image"><img src={card.imgSrc} alt="" width="224px"></img></div>
+                <div className="foodList__price">Cena: {card.price}</div>
+                <div className="foodList__desc">{card.desc}</div>
             </Col>
           )
         })}
