@@ -39,8 +39,8 @@ database.serialize(() =>
         `INSERT INTO foodList (name, price, desc, imgSrc)
         VALUES(
           "Kartupelis",
-          "3",
-          "Apraksts",
+          "3.52",
+          "Mums ir pieejami mīksti, vārīti karupeļi iegūti no tālām zemēm.",
           "https://cdn.santa.lv/media/2020/03/4/large/2530503a0cb7.jpg");
         )`
       )
