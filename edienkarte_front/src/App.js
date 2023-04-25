@@ -177,7 +177,7 @@ function App() {
             return(
                 <Col key={Math.random()} className="mt-4 foodList">
                 <div className="foodList__header">{card.name}</div>
-                <div className="foodList__image"><img src={card.imgSrc} alt="" width="224px"></img></div>
+                <div className="foodList__image"><img src={card.imgSrc} alt="" height="224px"></img></div>
                 <div className="foodList__price">Cena: {card.price}</div>
                 <div className="foodList__desc">{card.desc}</div>
             </Col>
