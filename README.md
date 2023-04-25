@@ -1,8 +1,8 @@
 # progEdienkarte
 
 Projekta veidotāji:
-Jēkabs Kūlis
-Elza Grudule
+Jēkabs Kūlis(Back-end, front-end skice): https://github.com/jekabskulis
+Elza Grudule(Front-end, dizains): https://github.com/ElzaGrudule
 
 Apraksts:
 Projekta mērķis ir piedāvāt vienkāršu digitālu ēdienkarti programmatūras izmantotājiem, bet to ir iespējams izmantot arī citiem līdzīgiem mērķiem.
