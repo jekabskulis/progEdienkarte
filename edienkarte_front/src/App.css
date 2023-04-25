@@ -1,7 +1,7 @@
 *
 {
   margin: 0px;
-  background-color: rgb(30, 160, 160);
+  background-color:#A0AECD;
 }
 
 .container
@@ -24,15 +24,19 @@
   padding-bottom: 12px;
   text-align: center;
 }
-/*
+.form-label{
+  margin-top: 10px;
+  color: #2B4570;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
 .card__button
 {
-  background-color: rgb(183, 50, 50);
-  font-weight: bold;
+  background-color: #2B4570;
   position: absolute;
-  top: 135px;
+  color: white;
+  top: 380px;
   font-size: larger;
-  margin-left: 24px;
-  border-radius: 10px;
-  border: 2px solid white;
-}*/
+  border-radius: 8px;
+  border: 2px solid black;
+}
